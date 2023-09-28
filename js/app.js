@@ -73,13 +73,12 @@ const album1 = {
   // Exercise 1:  Update the title property of album1 from 'Talking Heads' to 'Talking Heads - 77', then assign that property to a variable named title
   album1.title = 'Talking Heads - 77'
   const title = album1.title
-  
+  console.log("Exercise 1 Done")
   
   
   // Exercise 2: Assign the string 'Sire' from album1 to a variable named label
   const label = album1.albumDetails.label;
-  console.log(label)
-
+  console.log("Exercise 2 Done")
 
   
   
@@ -104,12 +103,13 @@ const album1 = {
   // Exercise 3: Accessing the string 'LP' from album2's formats array, add it to the end of album3's formats array.
   
    album3.albumDetails.formats.push((album2.albumDetails.formats[0]))
-  
+   console.log("Exercise 3 Done")
   
   
   // Exercise 4:  Update the released property of album3 from a string into a Date object using that string
   
-  
+    new Date() = album3.albumDetails.released
+ 
   
   
   const album4 = {
@@ -121,8 +121,8 @@ const album1 = {
   };
   
   // Exercise 5:  Add a property named label with the value 'Sire' to album4's albumDetails property
-  album4.label = "Sire"
-  
+  album4.albumDetails.label = "Sire"
+  console.log("Exercise 5 Done")
   
   
   const album5 = {
@@ -135,8 +135,8 @@ const album1 = {
   };
   
   // Exercise 6:  Update the value 'emi' within album5's labels array to 'EMI'
-  
-  
+  album5.albumDetails.labels[1] = "EMI"
+  console.log("Exercise 6 Done")
   
   
   const album6 = {
@@ -149,7 +149,7 @@ const album1 = {
   };
   
   // Exercise 7:  Assign album6's formats array to a variable named formats
-  
+  const formats = album6.albumDetails.formats
   
   
   
@@ -173,13 +173,13 @@ const album1 = {
   ];
   
   // Exercise 8:  Using the talkingHeadsAlbums array, assign album5's labels property to a variable named labels
-  
-  
+  labels = talkingHeadsAlbums[4]
+  console.log("Exercise 8 Done")
   
   
   // Exercise 9:  Using the talkingHeadsAlbums array, assign album7's released property to album6's released property
-  
-  
+  talkingHeadsAlbums[6].albumDetails.released = talkingHeadsAlbums[5].albumDetails.released
+  console.log("Exercise 9 Done")
   
   
   // Exercise 10:  Using the pre-defined variable named albumIdx below, assign the albumDetails object of the album located within the talkingHeadsAlbums array at the index represented by the value of albumIdx to a variable named albumDetails
@@ -194,11 +194,11 @@ console.log('=========================== Excercise console.logs =============')
 console.log('Exercise 1:', title);
 console.log('Exercise 2:', label);
 console.log('Exercise 3:', album3.albumDetails.formats[1]);
-//console.log('Exercise 4:', album3.albumDetails.released.toLocaleDateString());
+console.log('Exercise 4:', album3.albumDetails.released.toLocaleDateString());
  console.log('Exercise 5:', album4.albumDetails.label);
-// console.log('Exercise 6:', album5.albumDetails.labels[1]);
-// console.log('Exercise 7:', formats);
-// console.log('Exercise 8:', labels);
-// console.log('Exercise 9:', talkingHeadsAlbums[5].albumDetails.released.toLocaleDateString());
+ console.log('Exercise 6:', album5.albumDetails.labels[1]);
+ console.log('Exercise 7:', formats);
+console.log('Exercise 8:', labels);
+ console.log('Exercise 9:', talkingHeadsAlbums[5].albumDetails.released.toLocaleDateString());
 // console.log('Exercise 10:', albumDetails);
 // console.log('===================================================================')
